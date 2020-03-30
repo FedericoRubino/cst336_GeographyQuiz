@@ -1,0 +1,29 @@
+{
+  "name": "geographyquizbackend",
+  "version": "1.0.0",
+  "description": "Remake of the geography quiz from lab 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FedericoRubino/cst336_GeographyQuiz.git"
+  },
+  "keywords": [
+    "lab8",
+    "CST336"
+  ],
+  "author": "Federico Rubino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FedericoRubino/cst336_GeographyQuiz/issues"
+  },
+  "homepage": "https://github.com/FedericoRubino/cst336_GeographyQuiz#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}

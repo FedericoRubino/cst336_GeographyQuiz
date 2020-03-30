@@ -1,0 +1,40 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+    <div class='jumbotron'>
+        <h1> SEARCH RESULTS </h1>
+        <button class='btn btn-info' onclick='location.href="/";'>Search Again</button>
+    </div>
+
+    <ul id='movies-list'>
+      
+       
+       
+        <div class="flex-container">
+            
+            <img class="poster flex-item" src="<%= data['ISBN:' + query].cover.large %>">
+
+            <div class="flex-item">
+                <h1><%= data["ISBN:" + query].title %></h1>
+                <h3>
+                    Authors: <%= data["ISBN:" + query].by_statement %>
+                    <br>
+                    Publishers: <%= data["ISBN:" + query].publishers[0].name %>
+                    <br>
+                    Publish Date: <%= data["ISBN:" + query].publish_date %>
+                    <br>
+                    Number of Pages: <%= data["ISBN:" + query].number_of_pages %>
+                </h3>
+            </div>
+        </div>
+       
+    <ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<%- include ('templates/footer'); -%>
